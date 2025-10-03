@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🚀 国产AI聊天室</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .chat-box { border: 2px solid red; padding: 20px; margin: 10px 0; }
+        input, button { padding: 10px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🇨🇳 国产AI聊天室 - Gitee部署</h1>
+    <div class="chat-box">
+        <input type="text" id="msg" placeholder="输入消息..." style="width: 300px;">
+        <button onclick="chat()">发送</button>
+        <div id="response" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        function chat() {
+            const msg = document.getElementById('msg').value;
+            const responseDiv = document.getElementById('response');
+            
+            // 国产智能回复系统
+            const replies = [
+                '牛逼！Gitee部署成功！',
+                '去他妈的科学上网！',
+                '中国人自己的AI聊天室！',
+                '国产技术崛起！',
+                '华为牛逼！阿里牛逼！',
+                '老子就用国内服务！'
+            ];
+            
+            const randomReply = replies[Math.floor(Math.random() * replies.length)];
+            responseDiv.innerHTML = `<strong>AI回复:</strong> ${randomReply}`;
+        }
+    </script>
+</body>
+</html>
